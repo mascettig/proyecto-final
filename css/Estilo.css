@@ -1,0 +1,250 @@
+*{
+    margin: 0; padding: 0;
+}
+body {
+    background-color: rgb(163, 162, 162);
+}
+.gridAreas{
+    display: grid;
+    grid-template-areas:
+    "header header   header   header"
+    "nav    carrucel carrucel carrucel"
+    "nav    main     main     main"
+    "footer footer   footer   footer"
+    ;
+    grid-template-rows: 200px 20% 60% 15%;
+    grid-template-columns: 20% 2fr;
+}
+/*Encabezado*/
+header{
+    grid-area: header;
+}
+div{
+    grid-area:carrucel
+}
+.display{
+    display: inline;
+}
+.color {
+    background-color: black;
+    height: auto
+}
+.fuente{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.TamanioLetra{
+    font-size: 50px;
+}
+.centrar{
+    text-align: center;
+}
+.margenes{
+    margin-left: 250px;
+}
+.BordesRedondiados{
+    border-radius: 50%;
+}
+.rotar{
+    transform:rotate(12deg);
+}
+.cabeza{
+    animation-name: cabeza;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+    animation-duration: 2s;
+}
+@keyframes cabeza{
+    0%{
+        transform: scale(1);
+
+    }
+    25%{
+        width: 250px;
+
+    }
+    50%{
+
+    }
+    75%{
+        transform: scale(2);
+
+    }
+    100%{
+
+    }
+
+}
+/*Menu*/
+nav{ 
+    display: flex;
+    grid-area: nav;
+
+}    
+ul{
+    position: sticky;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: stretch;
+}
+li{
+    background-image: linear-gradient(brown, black);
+    background-color: brown;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+     color: white;
+     font-weight: bold;
+}
+.bordes{
+    border: solid 5px white;
+    width: 650px;
+    padding: 0px 50px;
+}
+/*cuerpo de pagina*/
+main{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    grid-area: main;
+}
+.hijo-flex{
+    order: -1;
+}
+
+/* piede de pagina*/
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+    background-image: linear-gradient(brown, black);
+}
+.skew{
+    transform: skew(15deg, 10deg);
+}
+.scale{
+    transform: scale(0.5, 2);
+}
+/*Nuestras Productos*/
+.gridA {
+display: grid;
+grid-template-areas:
+"header header     header"
+"nav    main       main"
+"nav    pantalones pantalones"
+"nav    remeras     remeras"
+"footer footer     footer"
+;
+grid-template-rows: 200px 70%;
+grid-template-columns: 20% 30%;
+}
+/*Tablas*/
+section {
+    grid-area: pantalones;
+}
+section {
+    grid-area: remeras;
+}
+th { 
+    color: white
+}
+.despegar{
+    margin-left: 500px;
+}
+.arriba{
+    margin-bottom: 50px;
+}
+/*PreguntasFrecuentes*/
+.gridAre{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav    main   main"
+    "nav    main   main"
+    "footer footer footer "
+    ;
+    grid-template-rows: 200px 50% 50vh;
+    grid-template-columns: 20% 50%;
+}
+.margeness{
+    margin-left: 10px;
+}
+.titulos{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin:15px;
+    background-color: crimson;
+     
+}
+.preguntas{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+.respuestas{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    margin-left: 30px;
+}
+/*Acerca de nostros*/
+.gridNos{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav    main   main"
+    "footer footer footer";
+    grid-template-rows: 200px 50%;
+    grid-template-columns: 20% 50%;
+}
+.separ{
+    margin-top: 50px;
+}
+/*Registrate*/
+.gridAreass{
+    display: grid;
+    grid-template-areas:
+     "header header header"
+     "nav    main   main"
+     "nav    main   main"
+     "footer footer footer";
+     grid-template-rows: 200px 50% 50% 25%;
+     grid-template-columns: 20% 2fr;
+}
+.letra{
+    font-size: 50px;
+}
+.letras{
+    font-size: 30px;
+}
+.letrass{
+    font-size: 20px;
+}
+.marg{
+    margin-top: 50px;
+}
+.marge{
+    margin-bottom: 20px;
+}
+/*mobile first*/
+@media (max-widht: 480px) {
+    nav{
+        background-color: pink;
+    }
+}
+@media (min-widht: 600px) {
+    nav{
+        background-color: purple;
+    }
+    
+}
