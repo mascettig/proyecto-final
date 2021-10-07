@@ -57,6 +57,7 @@ const isStock = (quantity,stock) =>{
 const Carrito =(option, quantity) =>{
     const found = productos.find((productos)=>{productos.id === option});
 
+
     if(isStock(quantity,found.stock)){
         cart += (quantity * found.precio);
         productos[option-1].stock -=quantity;
