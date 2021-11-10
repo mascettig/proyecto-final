@@ -44,7 +44,23 @@ function validarFormulario(e){
 const productos = [ { id: 1, nombre: "Zapatillas", precio: 12500},
 { id: 2, nombre:"Zapatillas claras", precio: 14500},
 { id: 3, nombre: "Zapatillas azules", precio: 12000 },
-{ id: 4, nombre: "Zapatillas marrones", precio: 8500}];
+{ id: 4, nombre: "Zapatillas marrones", precio: 8500},
+{ id: 5, nombre: "Pantalo", precio: 4500},
+{ id: 6, nombre: "Pantalon jeans", precio: 5000},
+{ id: 7, nombre: "Pantalon jeans clasico", precio: 4500},
+{ id: 8, nombre: "Pantalon jeans mas claro", precio: 5500},
+{ id: 9, nombre: "Remera", precio: 1500},
+{ id: 10, nombre: "Remera de colores", precio: 2000},
+{ id: 11, nombre: "Remera blanco y negro", precio: 2500},
+{ id: 12, nombre: "Remera rayo", precio: 2000},
+{ id: 13, nombre: "Buzo", precio: 3500},
+{ id: 14, nombre: "Buzo de color gris", precio: 4000},
+{ id: 15, nombre: "buzo de color rosa", precio: 4000},
+{ id: 16, nombre: "Buzo de color celeste", precio: 4000},
+{ id: 17, nombre: "Campera", precio: 7500},
+{ id: 18, nombre: "Campera de jeans", precio: 8500},
+{ id: 19, nombre: "Campera de Cuero", precio: 9000},
+{ id: 20, nombre: "Campera Negra", precio: 6000}];
 
 for (const producto of productos)(
   $("#app"). append(`<div><h3> ID: ${productos.id}</h3>
